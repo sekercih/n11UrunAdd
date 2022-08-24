@@ -22,10 +22,10 @@ The user logs in, searches for a product, favorites the product from the results
 ### Installation
 Clone the repo
 
-git clone https://github.com/FCetiner/com.n11_Microgroup
+git clone https://github.com/sekercih/n11UrunAdd
 
 ### How to run
 if you use ide In order to receive report, it must be run from the runner class.
-You can also run it using "mvn clean install" code
+You can also run it using "mvn clean verify" code
 
 
