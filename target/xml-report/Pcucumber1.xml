@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="49.813">
+    <testcase classname="N11 Favorite Product Scenario" name="User should be able to add the product to my favorites when logged in" time="49.276">
+        <failure message="Element &lt;div class=&quot;btnMyFavorites&quot;&gt; is not clickable at point (1093,100) because another element &lt;div class=&quot;lightBox &quot;&gt; obscures it&#10;Build info: version: '4.2.1', revision: 'ac4d0fdd4a'&#10;System info: host: 'DESKTOP-9ONR3K3', ip: '172.18.208.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [4464fbc6-ea61-4539-89d3-83867b68984b, clickElement {id=70a70835-44e9-4896-b5ff-c758fdc93707}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.2, moz:accessibilityChecks: false, moz:buildID: 20220808125904, moz:debuggerAddress: localhost:59167, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12100, moz:profile: C:\Users\Mehmet\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59167/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Element: [[FirefoxDriver: firefox on WINDOWS (4464fbc6-ea61-4539-89d3-83867b68984b)] -&gt; css selector: div.btnMyFavorites]&#10;Session ID: 4464fbc6-ea61-4539-89d3-83867b68984b" type="org.openqa.selenium.ElementClickInterceptedException">
+            <![CDATA[Given Kullanici "https://www.n11.com/" sitesinin anasayfasina gider.........passed
+Then Ana sayfanin acildigi kontrol edilir...................................passed
+When Siteye login olunur....................................................passed
+Then Login islemi kontrol edilir............................................passed
+And "Iphone" kelimesi aranir................................................passed
+Then "Iphone" kelimesi aratildigi kontrol edilir............................passed
+And Arama sonuclari sayfasindan 2. sayfa acilir.............................passed
+Then 2. sayfanin acildigi kontrol edilir....................................passed
+And Sayfadaki 3. urun favorilere eklenir....................................passed
+And Favorilerim sayfasina gidilir...........................................failed
+Then Favorilerim sayfasi acildigi kontrol edilir............................skipped
+And Eklenen urun favorilerden silinir ve silme islemi kontrol edilir........skipped
+Then Uye cikis islemi yapilir...............................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: Element <div class="btnMyFavorites"> is not clickable at point (1093,100) because another element <div class="lightBox "> obscures it
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-9ONR3K3', ip: '172.18.208.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [4464fbc6-ea61-4539-89d3-83867b68984b, clickElement {id=70a70835-44e9-4896-b5ff-c758fdc93707}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.2, moz:accessibilityChecks: false, moz:buildID: 20220808125904, moz:debuggerAddress: localhost:59167, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12100, moz:profile: C:\Users\Mehmet\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59167/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (4464fbc6-ea61-4539-89d3-83867b68984b)] -> css selector: div.btnMyFavorites]
+Session ID: 4464fbc6-ea61-4539-89d3-83867b68984b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at stepdefinitions.N11Stepdefinition.favorilerimSayfasinaGidilir(N11Stepdefinition.java:101)
+	at ✽.Favorilerim sayfasina gidilir.(file:///C:/Users/Mehmet/Desktop/com.n11/src/test/resources/features/TC01.feature:15)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
